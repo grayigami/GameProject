@@ -14,7 +14,7 @@ public class Screen {
 		}
 	}
 	
-	public void Add(Sprite spr) {
+	public void Add(Sprite2D spr) {
 		
 		for (int xx = 0; xx < spr.getWidth(); xx++) {
 			
@@ -22,5 +22,9 @@ public class Screen {
 				pixels[ (xx + spr.getPosX()) ][ (yy + spr.getPosX()) ] = spr.getPixel(xx, yy);
 			}
 		}
+	}
+	
+	public void Add(Sprite3D spr) {
+	
 	}
 }
